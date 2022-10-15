@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .centraliza{
+            display:flex; justify-content:center;
+        }
+    </style>
+</head>
+<body>
+    <div style="display:flex; justify-content:center;">
+        <h1 >VERIFICADOR DE CPF VÁLIDO</h1>
+    </div>
+    <h4 class="centraliza">{{ variavelPagina }}</h4>
+    <br>
+    <div class="centraliza">
+        <form action="{{ url_for('CPF')}}" method="post" style="text-align: center;">
+            <label for=""><h3>Insira Cpf</h3></label><br>
+            <input type="text" name="ValorCPF" placeholder="Com ou sem pontuação" style="width:150px; height:32px">
+            <br>
+            <button style="margin: 8px; width: 50px; height:40px">OK</button>
+        </form>
+        <br>
+    </div>
+    <div class="centraliza">{{ resultado }}</div>
+</body>
+</html>

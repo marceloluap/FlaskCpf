@@ -1,5 +1,9 @@
 #versão python3/windows
-#acessar virtual env =>  digitar no terminal após estar na pasta FlaskCpf: .\amb1\Scripts\activate
+#iniciar com botão run 
+# OU 
+# no terminal: python site.py
+# OU
+#acessar virtual env =>  digitar no terminal após estar na pasta FlaskCpf: .\amb1\Scripts\activate no CMD
 #-------------------------
 # no terminal: py site.py   
 # no browser : http://localhost:5000/
